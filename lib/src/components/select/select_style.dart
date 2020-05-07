@@ -1,6 +1,8 @@
 import 'package:equinox/equinox.dart';
 import 'package:flutter/cupertino.dart';
 
+import '../../model/colors.dart';
+
 StyleData _generateForStatus(String status) {
   return StyleData({
     'select-$status-outline-border-color': 'color-$status-default',
@@ -8,13 +10,11 @@ StyleData _generateForStatus(String status) {
     'select-$status-outline-text-color': 'text-basic-color',
     'select-$status-outline-hint-color': 'text-hint-color',
     'select-$status-outline-active-border-color': 'color-$status-hover',
-    'select-$status-outline-active-background-color':
-        'background-basic-color-2',
+    'select-$status-outline-active-background-color': 'background-basic-color-2',
     'select-$status-outline-active-text-color': 'text-basic-color',
     'select-$status-outline-active-hint-color': 'text-hint-color',
     'select-$status-outline-disabled-border-color': 'border-basic-color-4',
-    'select-$status-outline-disabled-background-color':
-        'background-basic-color-3',
+    'select-$status-outline-disabled-background-color': 'background-basic-color-3',
     'select-$status-outline-disabled-text-color': 'text-disabled-color',
     'select-$status-outline-disabled-hint-color': 'text-disabled-color',
     'select-$status-filled-border-color': 'color-$status-default',
@@ -26,20 +26,19 @@ StyleData _generateForStatus(String status) {
     'select-$status-filled-active-text-color': 'text-control-color',
     'select-$status-filled-active-hint-color': 'text-control-color',
     'select-$status-filled-disabled-border-color': 'background-basic-color-3',
-    'select-$status-filled-disabled-background-color':
-        'background-basic-color-3',
+    'select-$status-filled-disabled-background-color': 'background-basic-color-3',
     'select-$status-filled-disabled-text-color': 'text-disabled-color',
     'select-$status-filled-disabled-hint-color': 'text-disabled-color',
-    'select-$status-ghost-border-color': Colors.transparent,
-    'select-$status-ghost-background-color': Colors.transparent,
+    'select-$status-ghost-border-color': EqColors.transparent,
+    'select-$status-ghost-background-color': EqColors.transparent,
     'select-$status-ghost-text-color': 'text-basic-color',
     'select-$status-ghost-hint-color': 'text-hint-color',
-    'select-$status-ghost-active-border-color': Colors.transparent,
-    'select-$status-ghost-active-background-color': Colors.transparent,
+    'select-$status-ghost-active-border-color': EqColors.transparent,
+    'select-$status-ghost-active-background-color': EqColors.transparent,
     'select-$status-ghost-active-text-color': 'text-basic-color',
     'select-$status-ghost-active-hint-color': 'text-hint-color',
-    'select-$status-ghost-disabled-border-color': Colors.transparent,
-    'select-$status-ghost-disabled-background-color': Colors.transparent,
+    'select-$status-ghost-disabled-border-color': EqColors.transparent,
+    'select-$status-ghost-disabled-background-color': EqColors.transparent,
     'select-$status-ghost-disabled-text-color': 'text-disabled-color',
     'select-$status-ghost-disabled-hint-color': 'text-disabled-color',
   });
@@ -75,16 +74,11 @@ final StyleData selectStyle = StyleData({
   'select-giant-text-font-family': 'text-heading-6-font-family',
   'select-giant-text-font-size': 'text-heading-6-font-size',
   'select-giant-text-font-weight': 'text-heading-6-font-weight',
-  'select-tiny-padding':
-      EdgeInsets.symmetric(vertical: 0.2275 * 16.0, horizontal: 1.125 * 16.0),
-  'select-small-padding':
-      EdgeInsets.symmetric(vertical: 0.2275 * 16.0, horizontal: 1.125 * 16.0),
-  'select-medium-padding':
-      EdgeInsets.symmetric(vertical: 0.4375 * 16.0, horizontal: 1.125 * 16.0),
-  'select-large-padding':
-      EdgeInsets.symmetric(vertical: 0.6875 * 16.0, horizontal: 1.125 * 16.0),
-  'select-giant-padding':
-      EdgeInsets.symmetric(vertical: 0.9375 * 16.0, horizontal: 1.125 * 16.0),
+  'select-tiny-padding': EdgeInsets.symmetric(vertical: 0.2275 * 16.0, horizontal: 1.125 * 16.0),
+  'select-small-padding': EdgeInsets.symmetric(vertical: 0.2275 * 16.0, horizontal: 1.125 * 16.0),
+  'select-medium-padding': EdgeInsets.symmetric(vertical: 0.4375 * 16.0, horizontal: 1.125 * 16.0),
+  'select-large-padding': EdgeInsets.symmetric(vertical: 0.6875 * 16.0, horizontal: 1.125 * 16.0),
+  'select-giant-padding': EdgeInsets.symmetric(vertical: 0.9375 * 16.0, horizontal: 1.125 * 16.0),
   'select-outline-border-color': 'border-basic-color-3',
   'select-outline-background-color': 'background-basic-color-2',
   'select-outline-text-color': 'text-basic-color',
@@ -109,16 +103,16 @@ final StyleData selectStyle = StyleData({
   'select-filled-disabled-background-color': 'background-basic-color-3',
   'select-filled-disabled-text-color': 'text-disabled-color',
   'select-filled-disabled-hint-color': 'text-disabled-color',
-  'select-ghost-border-color': Colors.transparent,
-  'select-ghost-background-color': Colors.transparent,
+  'select-ghost-border-color': EqColors.transparent,
+  'select-ghost-background-color': EqColors.transparent,
   'select-ghost-text-color': 'text-basic-color',
   'select-ghost-hint-color': 'text-hint-color',
-  'select-ghost-active-border-color': Colors.transparent,
-  'select-ghost-active-background-color': Colors.transparent,
+  'select-ghost-active-border-color': EqColors.transparent,
+  'select-ghost-active-background-color': EqColors.transparent,
   'select-ghost-active-text-color': 'text-basic-color',
   'select-ghost-active-hint-color': 'text-hint-color',
-  'select-ghost-disabled-border-color': Colors.transparent,
-  'select-ghost-disabled-background-color': Colors.transparent,
+  'select-ghost-disabled-border-color': EqColors.transparent,
+  'select-ghost-disabled-background-color': EqColors.transparent,
   'select-ghost-disabled-text-color': 'text-disabled-color',
   'select-ghost-disabled-hint-color': 'text-disabled-color',
 })

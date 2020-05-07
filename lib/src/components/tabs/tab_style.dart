@@ -4,7 +4,7 @@ final StyleData tabStyle = StyleData({
   'tab-indicator-color': 'border-basic-color-3',
   'tab-indicator-active-color': 'color-primary-500',
   'tab-indicator-hover-color': 'color-primary-400',
-  'tab-indicator-disabled-color': Colors.transparent,
+  'tab-indicator-disabled-color': EqColors.transparent,
   'tab-foreground-color': 'text-hint-color',
   'tab-foreground-active-color': 'color-primary-500',
   'tab-foreground-disabled-color': 'text-disabled-color',

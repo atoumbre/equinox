@@ -166,11 +166,8 @@ class EqThemes {
         'text-control-color': 'color-basic-100',
         'text-disabled-color': 'color-basic-700',
         'text-hint-color': 'color-basic-600',
-        'outline-color': Colors.white.withOpacity(0.125),
-        'shadow': BoxShadow(
-            offset: Offset(0.0, 8.0),
-            blurRadius: 16.0,
-            color: Color.fromRGBO(12, 13, 16, 0.25)),
+        'outline-color': EqColors.white.withOpacity(0.125),
+        'shadow': BoxShadow(offset: Offset(0.0, 8.0), blurRadius: 16.0, color: Color.fromRGBO(12, 13, 16, 0.25)),
       },
     ));
 }

@@ -22,8 +22,7 @@ class EqToastWidget extends StatefulWidget {
   _EqToastWidgetState createState() => _EqToastWidgetState();
 }
 
-class _EqToastWidgetState extends State<EqToastWidget>
-    with SingleTickerProviderStateMixin {
+class _EqToastWidgetState extends State<EqToastWidget> with SingleTickerProviderStateMixin {
   AnimationController controller;
   Animation<double> animation;
   bool revealing = true;
@@ -108,8 +107,7 @@ class _EqToastWidgetState extends State<EqToastWidget>
             duration: style.get('minor-animation-duration'),
             curve: style.get('minor-animation-curve'),
             decoration: BoxDecoration(
-              color: style.get(
-                  generateSelector([...statusSelector, 'background-color'])),
+              color: style.get(generateSelector([...statusSelector, 'background-color'])),
               boxShadow: [style.get('toast-shadow')],
               borderRadius: borderRadius,
             ),
@@ -152,8 +150,7 @@ class __EqToastBodyState extends State<_EqToastBody> {
   @override
   Widget build(BuildContext context) {
     final style = StaticStyle.of(context);
-    final foregroundColor = style.get(
-        generateSelector(['toast', widget.data.status, 'foreground-color']));
+    final foregroundColor = style.get(generateSelector(['toast', widget.data.status, 'foreground-color']));
 
     final borderRadius = BorderRadius.all(EqWidgetShapeUtils.getRadius(
       style: style.style,
@@ -183,13 +180,12 @@ class __EqToastBodyState extends State<_EqToastBody> {
                 Container(
                   decoration: BoxDecoration(
                     borderRadius: borderRadius,
-                    color: Colors.white,
+                    color: EqColors.white,
                   ),
                   padding: style.get('toast-icon-padding'),
                   child: EqIcon(
                     widget.data.icon,
-                    color: style.get(generateSelector(
-                        ['toast', widget.data.status, 'icon-color'])),
+                    color: style.get(generateSelector(['toast', widget.data.status, 'icon-color'])),
                     size: style.get('toast-icon-size'),
                   ),
                 ),

@@ -15,7 +15,7 @@ final StyleData cardStyle = StyleData({
   'card-text-font-weight': 'text-paragraph-font-weight',
   'card-text-font-size': 'text-paragraph-font-size',
   'card-border-width': 0.0,
-  'card-border-color': Colors.transparent,
+  'card-border-color': EqColors.transparent,
   'card-shape': 'widget-shape',
   'card-padding': const EdgeInsets.symmetric(vertical: 16.0, horizontal: 20.0),
   'card-shadow': 'shadow',

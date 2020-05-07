@@ -8,10 +8,8 @@ StyleData _getFilledForStatus(String status) {
     'icon-button-filled-$status-icon-color': 'text-control-color',
     'icon-button-filled-$status-active-background-color': 'color-$status-hover',
     'icon-button-filled-$status-active-border-color': 'color-$status-hover',
-    'icon-button-filled-$status-active-icon-color':
-        'icon-button-filled-$status-icon-color',
-    'icon-button-filled-$status-disabled-background-color':
-        'background-basic-color-3',
+    'icon-button-filled-$status-active-icon-color': 'icon-button-filled-$status-icon-color',
+    'icon-button-filled-$status-disabled-background-color': 'background-basic-color-3',
     'icon-button-filled-$status-disabled-border-color': 'border-basic-color-3',
     'icon-button-filled-$status-disabled-icon-color': 'text-disabled-color',
   });
@@ -44,16 +42,13 @@ StyleData _getOutlineForStatus(String status) {
   return StyleData({
     'icon-button-outline-$status-border-color': 'color-$status-default',
     'icon-button-outline-$status-icon-color': 'text-$status-color',
-    'icon-button-outline-$status-background-color':
-        'icon-button-outline-background-color',
+    'icon-button-outline-$status-background-color': 'icon-button-outline-background-color',
     'icon-button-outline-$status-active-border-color': 'color-$status-hover',
     'icon-button-outline-$status-active-icon-color': 'text-$status-hover-color',
-    'icon-button-outline-$status-active-background-color':
-        'icon-button-outline-background-color',
+    'icon-button-outline-$status-active-background-color': 'icon-button-outline-background-color',
     'icon-button-outline-$status-disabled-border-color': 'border-basic-color-3',
     'icon-button-outline-$status-disabled-icon-color': 'text-disabled-color',
-    'icon-button-outline-$status-disabled-background-color':
-        'icon-button-outline-background-color',
+    'icon-button-outline-$status-disabled-background-color': 'icon-button-outline-background-color',
   });
 }
 
@@ -69,12 +64,10 @@ final StyleData _outlineStyle = StyleData({
   'icon-button-outline-icon-color': 'text-primary-color',
   'icon-button-outline-active-border-color': 'color-primary-hover',
   'icon-button-outline-active-icon-color': 'text-primary-hover-color',
-  'icon-button-outline-active-background-color':
-      'icon-button-outline-background-color',
+  'icon-button-outline-active-background-color': 'icon-button-outline-background-color',
   'icon-button-outline-disabled-border-color': 'border-basic-color-3',
   'icon-button-outline-disabled-icon-color': 'text-disabled-color',
-  'icon-button-outline-disabled-background-color':
-      'icon-button-outline-background-color',
+  'icon-button-outline-disabled-background-color': 'icon-button-outline-background-color',
 })
   ..inject(_getOutlineForStatus('primary'))
   ..inject(_getOutlineForStatus('success'))
@@ -86,25 +79,20 @@ StyleData _getGhostForStatus(String status) {
   return StyleData({
     'icon-button-ghost-$status-border-color': 'icon-button-ghost-border-color',
     'icon-button-ghost-$status-icon-color': 'text-$status-color',
-    'icon-button-ghost-$status-background-color':
-        'icon-button-ghost-background-color',
-    'icon-button-ghost-$status-active-border-color':
-        'icon-button-ghost-border-color',
+    'icon-button-ghost-$status-background-color': 'icon-button-ghost-background-color',
+    'icon-button-ghost-$status-active-border-color': 'icon-button-ghost-border-color',
     'icon-button-ghost-$status-active-icon-color': 'text-$status-hover-color',
-    'icon-button-ghost-$status-active-background-color':
-        'icon-button-ghost-background-color',
-    'icon-button-ghost-$status-disabled-border-color':
-        'icon-button-ghost-border-color',
+    'icon-button-ghost-$status-active-background-color': 'icon-button-ghost-background-color',
+    'icon-button-ghost-$status-disabled-border-color': 'icon-button-ghost-border-color',
     'icon-button-ghost-$status-disabled-icon-color': 'text-disabled-color',
-    'icon-button-ghost-$status-disabled-background-color':
-        'icon-button-ghost-background-color',
+    'icon-button-ghost-$status-disabled-background-color': 'icon-button-ghost-background-color',
   });
 }
 
 final StyleData _ghostStyle = StyleData({
   'icon-button-ghost-border-width': 0.0,
-  'icon-button-ghost-border-color': Colors.transparent,
-  'icon-button-ghost-background-color': Colors.transparent,
+  'icon-button-ghost-border-color': EqColors.transparent,
+  'icon-button-ghost-background-color': EqColors.transparent,
   'icon-button-ghost-tiny-padding': const EdgeInsets.all(6.0),
   'icon-button-ghost-small-padding': const EdgeInsets.all(8.0),
   'icon-button-ghost-medium-padding': const EdgeInsets.all(12.0),
@@ -113,12 +101,10 @@ final StyleData _ghostStyle = StyleData({
   'icon-button-ghost-icon-color': 'icon-color',
   'icon-button-ghost-active-border-color': 'icon-button-ghost-border-color',
   'icon-button-ghost-active-icon-color': 'icon-active-color',
-  'icon-button-ghost-active-background-color':
-      'icon-button-ghost-background-color',
+  'icon-button-ghost-active-background-color': 'icon-button-ghost-background-color',
   'icon-button-ghost-disabled-border-color': 'icon-button-ghost-border-color',
   'icon-button-ghost-disabled-icon-color': 'icon-disabled-color',
-  'icon-button-ghost-disabled-background-color':
-      'icon-button-ghost-background-color',
+  'icon-button-ghost-disabled-background-color': 'icon-button-ghost-background-color',
 })
   ..inject(_getGhostForStatus('primary'))
   ..inject(_getGhostForStatus('success'))

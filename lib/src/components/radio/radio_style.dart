@@ -3,12 +3,10 @@ import 'package:equinox/equinox.dart';
 StyleData _getStyle(String status) {
   return StyleData({
     'radio-$status-border-color': 'color-$status-default',
-    'radio-$status-background-color': (StyleData style) =>
-        style.get('color-$status-default').withOpacity(0.125),
-    'radio-$status-knob-color': Colors.transparent,
+    'radio-$status-background-color': (StyleData style) => style.get('color-$status-default').withOpacity(0.125),
+    'radio-$status-knob-color': EqColors.transparent,
     'radio-$status-focus-border-color': 'color-$status-hover',
-    'radio-$status-focus-background-color': (StyleData style) =>
-        style.get('color-$status-focus').withOpacity(0.125),
+    'radio-$status-focus-background-color': (StyleData style) => style.get('color-$status-focus').withOpacity(0.125),
     'radio-$status-focus-knob-color': 'color-$status-hover',
     'radio-$status-selected-border-color': 'color-$status-default',
     'radio-$status-selected-background-color': (StyleData style) =>
@@ -31,7 +29,7 @@ final StyleData radioStyle = StyleData({
   'radio-outline-width': 'outline-width',
   'radio-background-color': 'background-basic-color-3',
   'radio-border-color': 'border-basic-color-4',
-  'radio-knob-color': Colors.transparent,
+  'radio-knob-color': EqColors.transparent,
   'radio-focus-border-color': 'color-primary-focus',
   'radio-focus-background-color': 'radio-background-color',
   'radio-focus-knob-color': 'color-primary-focus',
@@ -41,7 +39,7 @@ final StyleData radioStyle = StyleData({
   'radio-disabled-text-color': 'text-disabled-color',
   'radio-disabled-border-color': 'border-basic-color-3',
   'radio-disabled-background-color': 'background-basic-color-2',
-  'radio-disabled-knob-color': Colors.transparent,
+  'radio-disabled-knob-color': EqColors.transparent,
   'radio-disabled-selected-border-color': 'border-basic-color-3',
   'radio-disabled-selected-background-color': 'background-basic-color-2',
   'radio-disabled-selected-knob-color': 'background-basic-color-4',

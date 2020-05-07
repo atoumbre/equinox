@@ -68,8 +68,7 @@ class EqCard extends StatelessWidget {
     final padding = this.padding ?? style.get('card-padding');
 
     if (header != null) {
-      if (status != null &&
-          this.statusAppearance == EqCardStatusAppearance.strip) {
+      if (status != null && this.statusAppearance == EqCardStatusAppearance.strip) {
         widgets.add(_CardStatusStripWidget(shape: shape, status: status));
       }
       widgets.add(_CardHeader(
@@ -79,8 +78,7 @@ class EqCard extends StatelessWidget {
         status: status,
         statusAppearance: statusAppearance,
       ));
-      if (!(status != null &&
-          this.statusAppearance == EqCardStatusAppearance.header)) {
+      if (!(status != null && this.statusAppearance == EqCardStatusAppearance.header)) {
         widgets.add(EqDivider(
           color: style.get('card-divider-color'),
           width: style.get('card-divider-width'),
@@ -176,7 +174,7 @@ class _CardHeader extends StatelessWidget {
         ),
         color: (statusAppearance == EqCardStatusAppearance.header)
             ? style.get(generateSelector([...selectorBase, 'background-color']))
-            : Colors.transparent,
+            : EqColors.transparent,
       ),
       child: MaterialDesign.Material(
         type: MaterialDesign.MaterialType.transparency,
@@ -207,12 +205,7 @@ class _CardFooter extends StatelessWidget {
   final Widget child;
 
   const _CardFooter(
-      {MaterialDesign.Key key,
-      this.status,
-      this.shape,
-      this.statusAppearance,
-      this.padding,
-      @required this.child})
+      {MaterialDesign.Key key, this.status, this.shape, this.statusAppearance, this.padding, @required this.child})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -243,9 +236,7 @@ class _CardStatusStripWidget extends StatelessWidget {
   final EqWidgetStatus status;
   final EqWidgetShape shape;
 
-  const _CardStatusStripWidget(
-      {MaterialDesign.Key key, this.status, this.shape})
-      : super(key: key);
+  const _CardStatusStripWidget({MaterialDesign.Key key, this.status, this.shape}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     final style = StaticStyle.of(context).style;
@@ -258,8 +249,7 @@ class _CardStatusStripWidget extends StatelessWidget {
           top: EqWidgetShapeUtils.getRadius(style: style, shape: shape),
           bottom: Radius.zero,
         ),
-        color: style
-            .get(generateSelector(['card-header', status, 'background-color'])),
+        color: style.get(generateSelector(['card-header', status, 'background-color'])),
       ),
     );
   }
