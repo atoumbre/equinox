@@ -34,7 +34,7 @@ class EqTabs extends StatefulWidget implements PreferredSizeWidget {
   _EqTabsState createState() => _EqTabsState();
 
   @override
-  Size get preferredSize => Size.fromHeight(48.0);
+  Size get preferredSize => Size.fromHeight(60.0);
 }
 
 class _EqTabsState extends State<EqTabs> {
@@ -61,23 +61,20 @@ class _EqTabsState extends State<EqTabs> {
         Flexible(
           flex: 1,
           child: EqTab(
-            pagerIndicatorAlignment:
-                (widget.pagerIndicatorPosition == EqVerticalPositioning.top)
-                    ? Alignment.topCenter
-                    : Alignment.bottomCenter,
+            pagerIndicatorAlignment: (widget.pagerIndicatorPosition == EqVerticalPositioning.top)
+                ? Alignment.topCenter
+                : Alignment.bottomCenter,
             showPagerIndicator: widget.showPagerIndicator,
             data: tab,
             active: selected == i,
-            onTap: (tab.disabled || widget.onSelect == null)
-                ? null
-                : () => onSelect(i),
+            onTap: (tab.disabled || widget.onSelect == null) ? null : () => onSelect(i),
           ),
         ),
       );
       if (i != widget.tabs.length - 1) tabs.add(SizedBox(width: 4.0));
     }
     return Container(
-      height: 48.0,
+      height: 60.0,
       child: Row(
         mainAxisSize: MainAxisSize.max,
         children: tabs,

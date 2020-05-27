@@ -49,12 +49,11 @@ class EqTabBar extends StatelessWidget implements PreferredSizeWidget {
       tabs: tabs,
       defaultSelected: defaultSelected,
       showPagerIndicator: position == EqVerticalPositioning.top ? true : null,
-      pagerIndicatorPosition: this.position == EqVerticalPositioning.top
-          ? EqVerticalPositioning.bottom
-          : EqVerticalPositioning.top,
+      pagerIndicatorPosition:
+          this.position == EqVerticalPositioning.top ? EqVerticalPositioning.bottom : EqVerticalPositioning.top,
     );
   }
 
   @override
-  Size get preferredSize => Size.fromHeight(48.0);
+  Size get preferredSize => Size.fromHeight(60.0);
 }

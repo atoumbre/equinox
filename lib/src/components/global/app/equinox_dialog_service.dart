@@ -12,9 +12,7 @@ class EqDialogService extends StatefulWidget {
   EqDialogServiceState createState() => EqDialogServiceState();
 
   static EqDialogServiceState of(BuildContext context) {
-    return (context.inheritFromWidgetOfExactType(_EqDialogServiceInherited)
-            as _EqDialogServiceInherited)
-        .data;
+    return (context.inheritFromWidgetOfExactType(_EqDialogServiceInherited) as _EqDialogServiceInherited).data;
   }
 }
 
@@ -124,8 +122,7 @@ class _EqDialogServiceInherited extends InheritedWidget {
   final EqDialogServiceState data;
   final Widget child;
 
-  _EqDialogServiceInherited({Key key, this.child, this.data})
-      : super(key: key, child: child);
+  _EqDialogServiceInherited({Key key, this.child, this.data}) : super(key: key, child: child);
 
   @override
   bool updateShouldNotify(_EqDialogServiceInherited oldWidget) => false;

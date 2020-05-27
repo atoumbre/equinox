@@ -15,9 +15,7 @@ class EqToastService extends StatefulWidget {
   EqToastServiceState createState() => EqToastServiceState();
 
   static EqToastServiceState of(BuildContext context) {
-    return (context.inheritFromWidgetOfExactType(_EqToastServiceInherited)
-            as _EqToastServiceInherited)
-        .data;
+    return (context.inheritFromWidgetOfExactType(_EqToastServiceInherited) as _EqToastServiceInherited).data;
   }
 }
 
@@ -47,8 +45,7 @@ class EqToastServiceState extends State<EqToastService> {
   /// Pushes a new toast to the list. Refer to [EqToast] for styling info.
   void pushToast({EqToast toast}) {
     _toastQueue.add(toast);
-    _toastScrollController.animateTo(0.0,
-        duration: Duration(milliseconds: 300), curve: Curves.easeInOut);
+    _toastScrollController.animateTo(0.0, duration: Duration(milliseconds: 300), curve: Curves.easeInOut);
     setState(() {});
   }
 
@@ -68,7 +65,7 @@ class EqToastServiceState extends State<EqToastService> {
     return Container(
       alignment: Alignment.bottomRight,
       padding: const EdgeInsets.only(
-        bottom: 48.0,
+        bottom: 60.0,
         top: 128.0,
       ),
       child: SingleChildScrollView(
@@ -105,8 +102,7 @@ class _EqToastServiceInherited extends InheritedWidget {
   final EqToastServiceState data;
   final Widget child;
 
-  _EqToastServiceInherited({Key key, this.child, this.data})
-      : super(key: key, child: child);
+  _EqToastServiceInherited({Key key, this.child, this.data}) : super(key: key, child: child);
 
   @override
   bool updateShouldNotify(_EqToastServiceInherited oldWidget) => false;
